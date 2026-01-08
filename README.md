@@ -22,7 +22,25 @@ For technical details please refer to [our technical report](https://arxiv.org/a
 - 🎯 **Interactive Mode**: Conversational interface for iterative development
 - 📊 **Trajectory Recording**: Detailed logging of all agent actions for debugging and analysis
 - ⚙️ **Flexible Configuration**: YAML-based configuration with environment variable support
+- 🐳 **Docker Integration**: Safe, isolated execution in containers
 - 🚀 **Easy Installation**: Simple pip-based installation
+
+## 📖 Documentation
+
+**New to Trae Agent?** Start with our comprehensive documentation:
+
+- **[📘 Getting Started Guide](docs/GETTING_STARTED.md)** - Installation, configuration, and first steps
+- **[🏗️ Architecture](docs/ARCHITECTURE.md)** - System design and components
+- **[🔬 Technical Design](docs/TECHNICAL_DESIGN.md)** - How we overcome LLM limitations
+- **[⚙️ Configuration Guide](docs/CONFIGURATION.md)** - Complete configuration reference
+- **[🔧 Tools Documentation](docs/tools.md)** - Available tools and usage
+- **[🐳 Docker Guide](docs/DOCKER.md)** - Running in containers
+- **[📊 Workflow Guide](docs/WORKFLOW.md)** - How Trae Agent works
+- **[💻 API Reference](docs/API_REFERENCE.md)** - Programmatic usage
+- **[💡 Examples & Use Cases](docs/EXAMPLES.md)** - Real-world examples
+- **[📝 Trajectory Recording](docs/TRAJECTORY_RECORDING.md)** - Execution logging
+
+**[→ Browse all documentation](docs/README.md)**
 
 ## 🚀 Installation
 
@@ -124,9 +142,9 @@ mcp_servers:
 
 **Legacy JSON Configuration:** If using the older JSON format, see [docs/legacy_config.md](docs/legacy_config.md). We recommend migrating to YAML.
 
-## 📖 Usage
+## 📖 Quick Start
 
-### Basic Commands
+### Basic Usage
 
 ```bash
 # Simple task execution
@@ -138,6 +156,8 @@ trae-cli show-config
 # Interactive mode
 trae-cli interactive
 ```
+
+**→ For detailed usage, see the [Getting Started Guide](docs/GETTING_STARTED.md)**
 
 ### Provider-Specific Examples
 
@@ -212,11 +232,18 @@ In interactive mode, you can use:
 - `clear` - Clear the screen
 - `exit` or `quit` - End the session
 
-## 🛠️ Advanced Features
+## 🛠️ Key Features
 
 ### Available Tools
 
-Trae Agent provides a comprehensive toolkit for software engineering tasks including file editing, bash execution, structured thinking, and task completion. For detailed information about all available tools and their capabilities, see [docs/tools.md](docs/tools.md).
+Trae Agent provides a comprehensive toolkit for software engineering tasks:
+- **bash** - Execute shell commands
+- **str_replace_based_edit_tool** - File editing and creation
+- **json_edit_tool** - JSON manipulation
+- **sequential_thinking** - Structured reasoning
+- **task_done** - Completion signaling
+
+**→ See [Tools Documentation](docs/tools.md) for detailed information**
 
 ### Trajectory Recording
 
@@ -232,6 +259,18 @@ trae-cli run "Optimize database queries" --trajectory-file optimization_debug.js
 ```
 
 Trajectory files contain LLM interactions, agent steps, tool usage, and execution metadata. For more details, see [docs/TRAJECTORY_RECORDING.md](docs/TRAJECTORY_RECORDING.md).
+
+## 📚 Learn More
+
+### Documentation
+- **[Complete Documentation](docs/README.md)** - Full documentation index
+- **[Architecture Deep Dive](docs/ARCHITECTURE.md)** - Understand how Trae Agent works
+- **[Workflow Guide](docs/WORKFLOW.md)** - Task execution process
+- **[API Reference](docs/API_REFERENCE.md)** - Use Trae Agent programmatically
+
+### Examples
+- **[Examples & Use Cases](docs/EXAMPLES.md)** - Code generation, bug fixing, testing, refactoring, and more
+- **[Docker Usage](docs/DOCKER.md)** - Isolated and reproducible execution
 
 ## 🔧 Development
 
