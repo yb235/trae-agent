@@ -31,6 +31,7 @@ For technical details please refer to [our technical report](https://arxiv.org/a
 
 - **[📘 Getting Started Guide](docs/GETTING_STARTED.md)** - Installation, configuration, and first steps
 - **[🏗️ Architecture](docs/ARCHITECTURE.md)** - System design and components
+- **[🔬 Technical Design](docs/TECHNICAL_DESIGN.md)** - How we overcome LLM limitations
 - **[⚙️ Configuration Guide](docs/CONFIGURATION.md)** - Complete configuration reference
 - **[🔧 Tools Documentation](docs/tools.md)** - Available tools and usage
 - **[🐳 Docker Guide](docs/DOCKER.md)** - Running in containers

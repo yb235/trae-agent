@@ -22,6 +22,13 @@ Welcome to the Trae Agent documentation! This guide will help you understand and
   - Data flow and execution model
   - Extension points
 
+- **[Technical Design](TECHNICAL_DESIGN.md)** - How Trae Agent overcomes LLM limitations
+  - Handling LLM output token limits
+  - Code editing without full regeneration
+  - View range pagination system
+  - String replacement architecture
+  - Response truncation mechanism
+
 - **[Workflow Guide](WORKFLOW.md)** - How Trae Agent processes tasks
   - Agent lifecycle
   - Execution phases
@@ -112,7 +119,7 @@ Welcome to the Trae Agent documentation! This guide will help you understand and
 → [Getting Started Guide](GETTING_STARTED.md)
 
 ### "I want to understand how it works"
-→ [Architecture](ARCHITECTURE.md) and [Workflow Guide](WORKFLOW.md)
+→ [Architecture](ARCHITECTURE.md), [Technical Design](TECHNICAL_DESIGN.md), and [Workflow Guide](WORKFLOW.md)
 
 ### "I want to configure for my needs"
 → [Configuration Guide](CONFIGURATION.md)
@@ -260,6 +267,7 @@ CLI → Agent → LLM Client → Provider (Anthropic/OpenAI/etc.)
 
 ### For Researchers
 - [Architecture](ARCHITECTURE.md) - System design
+- [Technical Design](TECHNICAL_DESIGN.md) - LLM limitation solutions
 - [Workflow Guide](WORKFLOW.md) - Execution model
 - [Trajectory Recording](TRAJECTORY_RECORDING.md) - Data collection
 
@@ -289,6 +297,7 @@ For academic details, see our [technical report](https://arxiv.org/abs/2507.2337
 |----------|--------|--------------|
 | Getting Started | ✅ Complete | 2025-01-08 |
 | Architecture | ✅ Complete | 2025-01-08 |
+| Technical Design | ✅ Complete | 2025-01-08 |
 | Workflow Guide | ✅ Complete | 2025-01-08 |
 | Configuration | ✅ Complete | 2025-01-08 |
 | Tools | ✅ Complete | Existing |
